@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\elev\\Desktop\\MP_EF_HeberAndrade_working01\\MP_EF_HeberAndrade\\MP_EF_HeberAndrade\\MP_EF_HeberAndrade.csproj": {}
+    "C:\\Users\\elev\\Documents\\GitHub\\EF_InProgress\\MP_EF_HeberAndrade\\MP_EF_HeberAndrade.csproj": {}
   },
   "projects": {
-    "C:\\Users\\elev\\Desktop\\MP_EF_HeberAndrade_working01\\MP_EF_HeberAndrade\\MP_EF_HeberAndrade\\MP_EF_HeberAndrade.csproj": {
+    "C:\\Users\\elev\\Documents\\GitHub\\EF_InProgress\\MP_EF_HeberAndrade\\MP_EF_HeberAndrade.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\elev\\Desktop\\MP_EF_HeberAndrade_working01\\MP_EF_HeberAndrade\\MP_EF_HeberAndrade\\MP_EF_HeberAndrade.csproj",
+        "projectUniqueName": "C:\\Users\\elev\\Documents\\GitHub\\EF_InProgress\\MP_EF_HeberAndrade\\MP_EF_HeberAndrade.csproj",
         "projectName": "MP_EF_HeberAndrade",
-        "projectPath": "C:\\Users\\elev\\Desktop\\MP_EF_HeberAndrade_working01\\MP_EF_HeberAndrade\\MP_EF_HeberAndrade\\MP_EF_HeberAndrade.csproj",
+        "projectPath": "C:\\Users\\elev\\Documents\\GitHub\\EF_InProgress\\MP_EF_HeberAndrade\\MP_EF_HeberAndrade.csproj",
         "packagesPath": "C:\\Users\\elev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\elev\\Desktop\\MP_EF_HeberAndrade_working01\\MP_EF_HeberAndrade\\MP_EF_HeberAndrade\\obj\\",
+        "outputPath": "C:\\Users\\elev\\Documents\\GitHub\\EF_InProgress\\MP_EF_HeberAndrade\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

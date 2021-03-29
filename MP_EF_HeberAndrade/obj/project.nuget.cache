@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jAAmWnR8bBVsGtasl7hoMS064csB34iF8zlFnD5laHk4zBdoY+08d+X9baFM0ATEmsYblixI/xnbPCKwXvOb8A==",
+  "dgSpecHash": "FuNlXnfKrkgbBTjKVIkx2hfytPj3jeiqKdwTmRWPylZN6txI1EKe3YnS/S8aWHfMoB1HnCl600rBM4AdXwAbpw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\elev\\Desktop\\MP_EF_HeberAndrade_working01\\MP_EF_HeberAndrade\\MP_EF_HeberAndrade\\MP_EF_HeberAndrade.csproj",
+  "projectFilePath": "C:\\Users\\elev\\Documents\\GitHub\\EF_InProgress\\MP_EF_HeberAndrade\\MP_EF_HeberAndrade.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\elev\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\elev\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
