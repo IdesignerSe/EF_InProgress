@@ -72,11 +72,12 @@ namespace MP_EF_HeberAndrade
                 }
                 void PageUpdateItems()
                 {
-                   
+                    Header("Create");
                     Menu();
                 }
                 void DeleteItem()
                 {
+                    Header("Create");
                     Menu();
                 }
 
