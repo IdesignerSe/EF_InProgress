@@ -86,6 +86,7 @@ namespace MP_EF_HeberAndrade
                 void ShowAllItems()
                 {
                     AssetsContext context;
+
                     using (context = new AssetsContext())
                     {
                         var list = context.Computers.ToList();
