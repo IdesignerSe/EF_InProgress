@@ -66,14 +66,13 @@ namespace MP_EF_HeberAndrade
 
                 void CreateItem()
                 {
+                    Header("Create");
                     Menu();
-                    //Save
-                    //Save
+             
                 }
                 void PageUpdateItems()
                 {
                    
-                    int ItemId = int.Parse(Console.ReadLine());
                     Menu();
                 }
                 void DeleteItem()
@@ -99,7 +98,7 @@ namespace MP_EF_HeberAndrade
                     Console.WriteLine("b) Create an Item".PadLeft(5));
                     Console.WriteLine("c) Update and Item".PadLeft(5));
                     Console.WriteLine("d) Delete and Item".PadLeft(5));
-                    Console.WriteLine("Key Return two times to QUIT this program".PadLeft(5));
+                    Console.WriteLine("Key Return twices to QUIT this program".PadLeft(5));
 
 
                     Console.ForegroundColor = ConsoleColor.DarkBlue;
@@ -123,6 +122,15 @@ namespace MP_EF_HeberAndrade
                     if (command == ConsoleKey.Enter)
                         QuitProgram();
 
+                }
+
+                void Header(string text)
+                {
+                    Console.Clear();
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine();
+                    Console.WriteLine(text.ToUpper());
+                    Console.WriteLine();
                 }
                 //             Console.WriteLine("Hello World!");
                 //           using (var dbContext = new CustomTreatmentContext())
