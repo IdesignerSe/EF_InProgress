@@ -75,6 +75,22 @@ namespace MP_EF_HeberAndrade
                 void PageUpdateItems()
                 {
                     Header("Create");
+
+                    Console.WriteLine("Witch Item to update? ");
+
+                    int ItemId = int.Parse(Console.ReadLine());
+
+                    AssetsContext context;
+
+                    using (context = new AssetsContext())
+                    {
+                        var list = context.Computers.ToList();
+                    }
+
+                    Computer computer = DbContext.GetItemById(ItemId);
+
+                    Console.WriteLine("Your Actual Item is: " + computer.Id);
+
                     Menu();
                 }
                 void DeleteItem()
