@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 
 namespace MP_EF_HeberAndrade
@@ -13,6 +14,8 @@ namespace MP_EF_HeberAndrade
         public DbSet<Tv> Tvs { get; set; }
 
         public const string conString = @"Server=S5D011\SQLEXPRESS; Database=Assetscatalog";
+        private SqlDbType itemId;
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(
@@ -22,6 +25,8 @@ namespace MP_EF_HeberAndrade
             );
         }
 
+       // public List<Computer> GetAllItems()
+        
         public Computer GetPostById(int itemId)
         {
             //(string brand, string modelName, int purchaseDate, int inicialCost, int expiredDate, int expiredCost)
@@ -54,6 +59,31 @@ namespace MP_EF_HeberAndrade
                     };
                     return (Computer)bp;
 
+                }
+
+                return null;
+
+            }
+        }
+
+        //GetItemById
+        public List<Computer> GetAllItems()
+        {
+            //(string brand, string modelName, int purchaseDate, int inicialCost, int expiredDate, int expiredCost)
+
+            var sql = @"SELECT [Id], [Brand], [ModelName],[PurchaseDate], [InicialCost], [ExpiredDate], [ExpiredCost]
+                        FROM Computer 
+                        WHERE Id=@Id";
+
+            using (SqlConnection connection = new SqlConnection(conString))
+            using (SqlCommand command = new SqlCommand(sql, connection))
+            {
+                connection.Open();
+                command.Parameters.Add(new SqlParameter("Id", itemId));
+
+                SqlDataReader reader = command.ExecuteReader();
+                {
+                    //(string brand, string modelName, int purchaseDate, int inicialCost, int expiredDate, int expiredCost)
                 }
 
                 return null;
