@@ -7,6 +7,8 @@ namespace MP_EF_HeberAndrade
 {
     class Program
     {
+        private static readonly IEnumerable<Asset> list;
+
         static void Main(string[] args)
         {
             
@@ -79,6 +81,24 @@ namespace MP_EF_HeberAndrade
                 {
                     Header("Create");
                     Menu();
+                }
+
+                void ShowAllItems()
+                {
+                    AssetsContext context;
+                    using (context = new AssetsContext())
+                    {
+                        var list = context.Computers.ToList();
+                    }
+                    foreach (Asset bp in list)
+                    {
+                        Console.WriteLine(bp.Id.ToString().PadRight(5) + bp.Brand.PadRight(30) +
+                            bp.ModelName.PadRight(20) + bp.PurchaseDate.ToString().PadRight(5) +
+                            bp.InicialCost.ToString().PadRight(5) + bp.ExpiredDate.ToString().PadRight(5) +
+                            bp.ExpiredCost.ToString().PadRight(5)
+                        );
+                    }
+                    Console.WriteLine();
                 }
 
                 void QuitProgram()

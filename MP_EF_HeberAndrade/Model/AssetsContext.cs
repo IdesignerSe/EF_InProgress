@@ -10,6 +10,8 @@ namespace MP_EF_HeberAndrade
         public DbSet<Computer> Computers { get; set; }
         public DbSet<Phone> Phones { get; set; }
         public DbSet<Tv> Tvs { get; set; }
+
+        public const string conString = @"Server=S5D011\SQLEXPRESS; Database=Assetscatalog";
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(
@@ -18,5 +20,6 @@ namespace MP_EF_HeberAndrade
                 " TrustServerCertificate = False; ApplicationIntent = ReadWrite; MultiSubnetFailover = False"
             );
         }
+
     }
 }
